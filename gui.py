@@ -1,5 +1,3 @@
-# gui.py
-
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 from firewall import *
@@ -10,15 +8,15 @@ def create_gui():
     """Create the main GUI window."""
     root = tk.Tk()
     root.title("Firewall Manager")
-    root.geometry("600x400")
-    root.configure(bg='#2b2b2b')  # Dark background for a modern look
+    root.geometry("520x600")
+    root.configure(bg='#1c1c1c')  # Darker background for a modern look
 
     # Set a responsive layout using grid
     root.grid_columnconfigure(0, weight=1)
     root.grid_rowconfigure(0, weight=1)
 
     # Create a main frame that expands
-    main_frame = ttk.Frame(root, padding="10")
+    main_frame = ttk.Frame(root, padding="15")
     main_frame.grid(row=0, column=0, sticky="nsew")
     main_frame.grid_columnconfigure(0, weight=1)
     main_frame.grid_rowconfigure(0, weight=1)
@@ -26,13 +24,13 @@ def create_gui():
     # Create a style
     style = ttk.Style()
     style.theme_use('clam')
-    style.configure('TButton', background='#4a4a4a', foreground='white', font=('Helvetica', 12))
-    style.configure('TLabel', background='#2b2b2b', foreground='white', font=('Helvetica', 12))
-    style.configure('TEntry', background='#3a3a3a', foreground='white', font=('Helvetica', 12))
+    style.configure('TButton', background='#007acc', foreground='white', font=('Helvetica', 12, 'bold'))
+    style.configure('TLabel', background='#1c1c1c', foreground='#e0e0e0', font=('Helvetica', 12))
+    style.configure('TEntry', fieldbackground='#3a3a3a', foreground='white', font=('Helvetica', 12))
 
     # Open Ports
     open_button = ttk.Button(main_frame, text="Open FTP and SSH Ports", command=lambda: open_ports([21, 22]))
-    open_button.grid(row=0, column=0, pady=5, sticky="ew")
+    open_button.grid(row=0, column=0, pady=(10, 5), sticky="ew")
 
     # Close Ports
     close_button = ttk.Button(main_frame, text="Close FTP and SSH Ports", command=lambda: close_ports([21, 22]))
@@ -40,7 +38,7 @@ def create_gui():
 
     # Block/Unblock IP Entry
     ip_label = ttk.Label(main_frame, text="Enter IP Address:")
-    ip_label.grid(row=2, column=0, pady=5)
+    ip_label.grid(row=2, column=0, pady=(10, 5), sticky="w")
 
     ip_entry = ttk.Entry(main_frame)
     ip_entry.grid(row=3, column=0, pady=5, sticky="ew")
@@ -79,7 +77,7 @@ def create_gui():
 
     # Help Button
     help_button = ttk.Button(main_frame, text="Help", command=show_help)
-    help_button.grid(row=12, column=0, pady=5, sticky="ew")
+    help_button.grid(row=12, column=0, pady=(5, 10), sticky="ew")
 
     # Start the GUI main loop
     root.mainloop()
@@ -90,9 +88,9 @@ def display_rules(root):
     rules_window = tk.Toplevel(root)
     rules_window.title("UFW Rules")
     rules_window.geometry("400x300")
-    rules_window.configure(bg='#2b2b2b')
+    rules_window.configure(bg='#1c1c1c')
 
-    rules_text = tk.Text(rules_window, wrap=tk.WORD, bg='#3a3a3a', fg='white')
+    rules_text = tk.Text(rules_window, wrap=tk.WORD, bg='#2d2d2d', fg='white')
     rules_text.insert(tk.END, rules)
     rules_text.pack(expand=True, fill=tk.BOTH)
 
