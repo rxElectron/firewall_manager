@@ -41,7 +41,7 @@ Follow these steps to install and run the Firewall Manager:
 1. **Clone the Repository**:
 
     
-    git clone https://github.com/rezakho/firewall_manager.git
+    git clone https://github.com/therboy/firewall_manager.git
     cd firewall_manager
     
 
