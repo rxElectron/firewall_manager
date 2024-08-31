@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
 from firewall import *
-from config_manager import *
+from config_manager import * 
 from help import show_help
 import subprocess
 from threading import Thread
