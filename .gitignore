@@ -1,0 +1,10 @@
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+
+# Ignore backup and config directories
+backups/
+configs/*.ufw
+
+# Ignore system files
+.DS_Store
