@@ -1,7 +1,3 @@
-Here's an enhanced version of your README file with better formatting, icons, sections, and visual appeal. The structure is optimized for readability and clarity, including collapsible sections for additional information.
-
----
-
 # 🔥 Firewall Manager
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)
@@ -142,5 +138,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 © 2024 Reza Khodarahimi - All Rights Reserved
-
----
