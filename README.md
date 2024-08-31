@@ -102,7 +102,7 @@ sudo systemctl enable ufw
 sudo systemctl start ufw
 ```
 
-For more information, visit the [Arch Linux UFW Documentation](https://wiki.archlinux.org/title/UFW).
+For more information, visit the [Arch Linux UFW Documentation](https://wiki.archlinux.org/title/Uncomplicated_Firewall).
 
 ## 🤝 Contributing
 
