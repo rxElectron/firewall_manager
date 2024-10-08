@@ -1,12 +1,12 @@
-# 🔥 Firewall Manager
+# 🔥 ufw Backup Manager
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Linux-green?style=for-the-badge&logo=linux&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
-A modern, user-friendly GUI-based firewall management tool for Linux systems built with Python and Tkinter. Easily control incoming and outgoing traffic, save/load configurations, and manage firewall settings with ease.
+A GUI-based firewall management tool for Linux systems built with Python and Tkinter. Easily control incoming and outgoing traffic, save/load configurations, and manage firewall settings with ease.
 
-## 🚀 Features
+## 🚀 Features -- [only yet] [V1]
 
 - **Open/Close FTP and SSH Ports**: Easily manage FTP (port 21) and SSH (port 22) access.
 - **Block/Unblock Specific IP Addresses**: Secure your system by blocking unwanted IPs.
@@ -65,7 +65,7 @@ Follow these steps to install and run the Firewall Manager:
     python3 main.py
     ```
 
-## 🎮 Usage
+## 🎮 Totally Backup Usage [yet V1]
 
 To use the Firewall Manager, simply run the `main.py` script and follow the instructions on the GUI. The application allows you to manage firewall settings like opening or closing ports, blocking/unblocking IP addresses, saving/loading configurations, and more!
 
